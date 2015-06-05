@@ -14,7 +14,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.android_unbound_service_1);
 
         Button btnStart= (Button) findViewById(R.id.startService);
         btnStart.setOnClickListener(new View.OnClickListener() {
