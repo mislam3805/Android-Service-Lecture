@@ -21,6 +21,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,UnboundServiceOne.class);
+                intent.putExtra("message1","Hi i am started");
                 startService(intent);
             }
         });
@@ -30,6 +31,8 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,UnboundServiceOne.class);
+
+                intent.putExtra("message2","Hi i am finished");
                 stopService(intent);
             }
         });

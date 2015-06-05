@@ -29,6 +29,8 @@ public class UnboundServiceOne extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Toast.makeText(getApplicationContext(),"Start Service",Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(getApplicationContext(),"Message= "+intent.getStringExtra("message1"),Toast.LENGTH_SHORT).show();
         return super.onStartCommand(intent, flags, startId);
 
     }
