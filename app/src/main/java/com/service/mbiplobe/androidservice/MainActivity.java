@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,UnboundServiceOne.class);
+                Intent intent=new Intent(MainActivity.this, TestUnboundIntendService.class);
                 intent.putExtra("message1","Hi i am started");
                 startService(intent);
             }

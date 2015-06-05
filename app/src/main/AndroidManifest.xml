@@ -18,6 +18,7 @@
         </activity>
 
         <service android:name=".UnboundServiceOne"></service>
+        <service android:name=".TestUnboundIntendService"></service>
     </application>
 
 </manifest>
