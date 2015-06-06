@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".TestMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +19,8 @@
 
         <service android:name=".UnboundServiceOne"></service>
         <service android:name=".TestUnboundIntendService"></service>
+        <service android:name=".HellowIntentService"></service>
+        <service android:name=".TestBoundService"></service>
     </application>
 
 </manifest>
